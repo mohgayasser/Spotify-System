@@ -1,0 +1,250 @@
+
+ CREATE TABLE LISTENER
+   (	
+   USER_NAME  VARCHAR2(50 BYTE) NOT NULL ENABLE, 
+	 BIRTH_DAY NUMBER(10,0) NOT NULL ENABLE, 
+	BIRTH_MONTH  NUMBER(10,0) NOT NULL ENABLE, 
+	BIRTH_YEAR  NUMBER(10,0) NOT NULL ENABLE, 
+	GENDER VARCHAR2(50 BYTE) NOT NULL ENABLE, 
+	E_MAIL VARCHAR2(50 BYTE), 
+	PASS  VARCHAR2(40 BYTE) NOT NULL ENABLE, 
+	 CONSTRAINT LISTENER_PK PRIMARY KEY (USER_NAME)
+   );
+
+set define off;
+Insert into LISTENER (USER_NAME,BIRTH_DAY,BIRTH_MONTH,BIRTH_YEAR,GENDER,E_MAIL,PASS) values ('mohga',5,2,1999,'f','mohga123@gmail.com','123456');
+Insert into LISTENER (USER_NAME,BIRTH_DAY,BIRTH_MONTH,BIRTH_YEAR,GENDER,E_MAIL,PASS) values ('mariem',5,7,1997,'f','mariam','232136');
+Insert into LISTENER (USER_NAME,BIRTH_DAY,BIRTH_MONTH,BIRTH_YEAR,GENDER,E_MAIL,PASS) values ('noha',8,9,1998,'f','nohga4568','8635436');
+Insert into LISTENER (USER_NAME,BIRTH_DAY,BIRTH_MONTH,BIRTH_YEAR,GENDER,E_MAIL,PASS) values ('Ahmad',8,9,1995,'m','ahmedmostafa','486486jk;k');
+Insert into LISTENER (USER_NAME,BIRTH_DAY,BIRTH_MONTH,BIRTH_YEAR,GENDER,E_MAIL,PASS) values ('Muna',12,6,1999,'f','munanjdo','njknsiuo5');
+Insert into LISTENER (USER_NAME,BIRTH_DAY,BIRTH_MONTH,BIRTH_YEAR,GENDER,E_MAIL,PASS) values ('mohamed',5,10,1980,'m','mohamed165','jkhkau6');
+Insert into LISTENER (USER_NAME,BIRTH_DAY,BIRTH_MONTH,BIRTH_YEAR,GENDER,E_MAIL,PASS) values ('laila',6,7,1997,'f','lala12365','56999');
+Insert into LISTENER (USER_NAME,BIRTH_DAY,BIRTH_MONTH,BIRTH_YEAR,GENDER,E_MAIL,PASS) values ('menna',8,9,1997,'f','mennamohamed','miohaned');
+Insert into LISTENER (USER_NAME,BIRTH_DAY,BIRTH_MONTH,BIRTH_YEAR,GENDER,E_MAIL,PASS) values ('Rawan',8,9,1999,'f','rawan5698','46956323');
+Insert into LISTENER (USER_NAME,BIRTH_DAY,BIRTH_MONTH,BIRTH_YEAR,GENDER,E_MAIL,PASS) values ('mostafa',7,10,1998,'m','mostafamohamed','mohamedmostafa');
+Insert into LISTENER (USER_NAME,BIRTH_DAY,BIRTH_MONTH,BIRTH_YEAR,GENDER,E_MAIL,PASS) values ('yousef',2,11,1996,'m','yousefmohamed','123mohamed');
+Insert into LISTENER (USER_NAME,BIRTH_DAY,BIRTH_MONTH,BIRTH_YEAR,GENDER,E_MAIL,PASS) values ('miada',20,12,1999,'f','miadamosa','4587jiji');
+Insert into LISTENER (USER_NAME,BIRTH_DAY,BIRTH_MONTH,BIRTH_YEAR,GENDER,E_MAIL,PASS) values ('sandy',27,7,1999,'f','sandy98796','669dflkjio');
+Insert into LISTENER (USER_NAME,BIRTH_DAY,BIRTH_MONTH,BIRTH_YEAR,GENDER,E_MAIL,PASS) values ('sandra',15,8,1999,'f','andra31659','565cdgvsdg');
+Insert into LISTENER (USER_NAME,BIRTH_DAY,BIRTH_MONTH,BIRTH_YEAR,GENDER,E_MAIL,PASS) values ('maison',9,12,1999,'f','maisonmontsar','montasar123');
+Insert into LISTENER (USER_NAME,BIRTH_DAY,BIRTH_MONTH,BIRTH_YEAR,GENDER,E_MAIL,PASS) values ('fared',21,5,1998,'m','faredabdalader','abdalader123');
+Insert into LISTENER (USER_NAME,BIRTH_DAY,BIRTH_MONTH,BIRTH_YEAR,GENDER,E_MAIL,PASS) values ('yassmen',15,11,1999,'f','yassmenalmaddad','yasmeen5499');
+Insert into LISTENER (USER_NAME,BIRTH_DAY,BIRTH_MONTH,BIRTH_YEAR,GENDER,E_MAIL,PASS) values ('haidy',14,7,1999,'f','haidykhalid','15997');
+
+CREATE TABLE ALBUM 
+   (	ALBUM_NAME VARCHAR2(50 BYTE) NOT NULL ENABLE, 
+	ALBUM_YEAR NUMBER(10,0) NOT NULL ENABLE, 
+	ALBUM_GENRE VARCHAR2(50 BYTE) NOT NULL ENABLE, 
+	ARTIST_NAME VARCHAR2(20 BYTE), 
+	 CONSTRAINT ALBUM_PK PRIMARY KEY (ALBUM_NAME)
+   );
+
+set define off;
+Insert into ALBUM (ALBUM_NAME,ALBUM_YEAR,ALBUM_GENRE,ARTIST_NAME) values ('25',2015,'pop','Adele');
+Insert into ALBUM (ALBUM_NAME,ALBUM_YEAR,ALBUM_GENRE,ARTIST_NAME) values ('greatest hits',2012,'pop','Adele');
+Insert into ALBUM (ALBUM_NAME,ALBUM_YEAR,ALBUM_GENRE,ARTIST_NAME) values ('19',2008,'pop','Adele');
+Insert into ALBUM (ALBUM_NAME,ALBUM_YEAR,ALBUM_GENRE,ARTIST_NAME) values ('strong',2015,'pop','Justin Bieber');
+Insert into ALBUM (ALBUM_NAME,ALBUM_YEAR,ALBUM_GENRE,ARTIST_NAME) values (' the best',2019,'pop hip hop','Justin Bieber');
+Insert into ALBUM (ALBUM_NAME,ALBUM_YEAR,ALBUM_GENRE,ARTIST_NAME) values ('El Leila',2013,'Egyptian Music','Amr Diab');
+Insert into ALBUM (ALBUM_NAME,ALBUM_YEAR,ALBUM_GENRE,ARTIST_NAME) values ('Alby Etmannah',2017,'Egyptian Music','Amr Diab');
+Insert into ALBUM (ALBUM_NAME,ALBUM_YEAR,ALBUM_GENRE,ARTIST_NAME) values ('kol hayaty',2019,'Egyptian Music','Amr Diab');
+Insert into ALBUM (ALBUM_NAME,ALBUM_YEAR,ALBUM_GENRE,ARTIST_NAME) values ('This Is Acting',2016,'pop','sia');
+Insert into ALBUM (ALBUM_NAME,ALBUM_YEAR,ALBUM_GENRE,ARTIST_NAME) values ('1000 forms of fear',2014,'pop','sia');
+Insert into ALBUM (ALBUM_NAME,ALBUM_YEAR,ALBUM_GENRE,ARTIST_NAME) values ('We Are Born',2010,'pop','sia');
+Insert into ALBUM (ALBUM_NAME,ALBUM_YEAR,ALBUM_GENRE,ARTIST_NAME) values ('Lover',2019,'pop','Taylor Swift');
+Insert into ALBUM (ALBUM_NAME,ALBUM_YEAR,ALBUM_GENRE,ARTIST_NAME) values ('When We All Fall Asleep, Where Do We Go?',2019,'pop','Billie Eilish');
+Insert into ALBUM (ALBUM_NAME,ALBUM_YEAR,ALBUM_GENRE,ARTIST_NAME) values ('don''t smile at me',2019,'pop','Billie Eilish');
+Insert into ALBUM (ALBUM_NAME,ALBUM_YEAR,ALBUM_GENRE,ARTIST_NAME) values ('Voicenotes',2018,'pop','Charlie Puth');
+Insert into ALBUM (ALBUM_NAME,ALBUM_YEAR,ALBUM_GENRE,ARTIST_NAME) values ('Nine Track Mind',2016,'pop','Charlie Puth');
+Insert into ALBUM (ALBUM_NAME,ALBUM_YEAR,ALBUM_GENRE,ARTIST_NAME) values ('Some Type of Love',2015,'pop','Charlie Puth');
+
+
+
+
+CREATE TABLE ARTIST
+   (
+   ARTIST_NAME VARCHAR2(50 BYTE) NOT NULL ENABLE, 
+	ARTIST_STYLE VARCHAR2(50 BYTE) NOT NULL ENABLE, 
+	ARTIST_COUNTRY VARCHAR2(50 BYTE) NOT NULL ENABLE, 
+	 CONSTRAINT ARTIST_PK PRIMARY KEY (ARTIST_NAME)
+   );
+set define off;
+Insert into ARTIST (ARTIST_NAME,ARTIST_STYLE,ARTIST_COUNTRY) values ('Adele','Pop','London, England');
+Insert into ARTIST (ARTIST_NAME,ARTIST_STYLE,ARTIST_COUNTRY) values ('sia','Pop electropop indie pop acid jazz','Australia');
+Insert into ARTIST (ARTIST_NAME,ARTIST_STYLE,ARTIST_COUNTRY) values ('Katy Perry','	Pop rock disco',' U.S');
+Insert into ARTIST (ARTIST_NAME,ARTIST_STYLE,ARTIST_COUNTRY) values ('Taylor Swift','pop',' U.S');
+Insert into ARTIST (ARTIST_NAME,ARTIST_STYLE,ARTIST_COUNTRY) values ('selena gomez','dance-pop  electropop',' U.S');
+Insert into ARTIST (ARTIST_NAME,ARTIST_STYLE,ARTIST_COUNTRY) values ('ariana grande','R&B','Florida');
+Insert into ARTIST (ARTIST_NAME,ARTIST_STYLE,ARTIST_COUNTRY) values ('Rihanna','reggae  hip hop  dance','island ');
+Insert into ARTIST (ARTIST_NAME,ARTIST_STYLE,ARTIST_COUNTRY) values ('Billie Eilish','Alternative pop; electropop; pop; indie pop','Irish');
+Insert into ARTIST (ARTIST_NAME,ARTIST_STYLE,ARTIST_COUNTRY) values ('Shawn Mendes','folk-pop; pop rock','Canada');
+Insert into ARTIST (ARTIST_NAME,ARTIST_STYLE,ARTIST_COUNTRY) values ('Charlie Puth','R&B','U.S');
+Insert into ARTIST (ARTIST_NAME,ARTIST_STYLE,ARTIST_COUNTRY) values ('Cardi B','pop',' U.S');
+Insert into ARTIST (ARTIST_NAME,ARTIST_STYLE,ARTIST_COUNTRY) values ('Justin Bieber','pop','Canada');
+Insert into ARTIST (ARTIST_NAME,ARTIST_STYLE,ARTIST_COUNTRY) values ('Amr Diab','Egyptian Music','Egypt');
+Insert into ARTIST (ARTIST_NAME,ARTIST_STYLE,ARTIST_COUNTRY) values ('Marwan pablo','Hip hop  ','Egypt');
+Insert into ARTIST (ARTIST_NAME,ARTIST_STYLE,ARTIST_COUNTRY) values ('Wegz','Hip hop  ','Egypt');
+Insert into ARTIST (ARTIST_NAME,ARTIST_STYLE,ARTIST_COUNTRY) values ('marwan moussa','Hip hop  ','Egypt');
+
+
+
+  CREATE TABLE PLAYLIST 
+   (	PLAYLIST_ID NUMBER(10,0) NOT NULL ENABLE, 
+	PLAYLIST_NAME VARCHAR2(50 BYTE) NOT NULL ENABLE, 
+	 CONSTRAINT PLAYLIST_PK PRIMARY KEY (PLAYLIST_ID)
+   );
+set define off;
+Insert into PLAYLIST (PLAYLIST_ID,PLAYLIST_NAME) values (1,'relaxation');
+Insert into PLAYLIST (PLAYLIST_ID,PLAYLIST_NAME) values (2,'meditation');
+Insert into PLAYLIST (PLAYLIST_ID,PLAYLIST_NAME) values (3,'sleep');
+Insert into PLAYLIST (PLAYLIST_ID,PLAYLIST_NAME) values (4,'pop');
+Insert into PLAYLIST (PLAYLIST_ID,PLAYLIST_NAME) values (5,'hip hop');
+Insert into PLAYLIST (PLAYLIST_ID,PLAYLIST_NAME) values (6,'classic');
+Insert into PLAYLIST (PLAYLIST_ID,PLAYLIST_NAME) values (7,'jazz');
+Insert into PLAYLIST (PLAYLIST_ID,PLAYLIST_NAME) values (8,'Enta omry');
+Insert into PLAYLIST (PLAYLIST_ID,PLAYLIST_NAME) values (9,'rock');
+Insert into PLAYLIST (PLAYLIST_ID,PLAYLIST_NAME) values (10,'Songs to sing alone ');
+Insert into PLAYLIST (PLAYLIST_ID,PLAYLIST_NAME) values (11,'you want to cry?');
+Insert into PLAYLIST (PLAYLIST_ID,PLAYLIST_NAME) values (12,'look');
+Insert into PLAYLIST (PLAYLIST_ID,PLAYLIST_NAME) values (13,'writing');
+Insert into PLAYLIST (PLAYLIST_ID,PLAYLIST_NAME) values (14,'honey');
+Insert into PLAYLIST (PLAYLIST_ID,PLAYLIST_NAME) values (15,'party');
+Insert into PLAYLIST (PLAYLIST_ID,PLAYLIST_NAME) values (16,'what about you');
+Insert into PLAYLIST (PLAYLIST_ID,PLAYLIST_NAME) values (17,'summer');
+
+
+ CREATE TABLE SONG 
+   (	PLAYLIST_ID NUMBER(10,0) NOT NULL ENABLE, 
+	SONG_NAME VARCHAR2(50 BYTE) NOT NULL ENABLE, 
+	SONG_DURATION VARCHAR2(50 BYTE) NOT NULL ENABLE, 
+	ALBUM_NAME VARCHAR2(50 BYTE) NOT NULL ENABLE, 
+	SONGLINK VARCHAR2(50 BYTE), 
+	 CONSTRAINT SONG_PK PRIMARY KEY (SONG_NAME),
+	 CONSTRAINT SONG_ALBUM_FK1 FOREIGN KEY (ALBUM_NAME) REFERENCES ALBUM (ALBUM_NAME ) , 
+	 CONSTRAINT SONG_PLAYLIST_FK1 FOREIGN KEY (PLAYLIST_ID) REFERENCES PLAYLIST (PLAYLIST_ID) 
+   );
+set define off;
+Insert into SONG (PLAYLIST_ID,SONG_NAME,SONG_DURATION,ALBUM_NAME,SONGLINK) values (1,'Someone Like You','00:02:26','greatest hits','media.io_Adele-Someone-Like-You.wav');
+Insert into SONG (PLAYLIST_ID,SONG_NAME,SONG_DURATION,ALBUM_NAME,SONGLINK) values (1,'Make You Feel My Love','00:02:12','greatest hits','media.io_Adele- Make you feel my love.wav');
+Insert into SONG (PLAYLIST_ID,SONG_NAME,SONG_DURATION,ALBUM_NAME,SONGLINK) values (1,'Rolling In The Deep','00:02:23','greatest hits','media.io_Rolling in the Deep _ ADELE_.wav');
+Insert into SONG (PLAYLIST_ID,SONG_NAME,SONG_DURATION,ALBUM_NAME,SONGLINK) values (1,'I''ll Be Waiting','00:03:12','greatest hits','media.io_Adele - I ll be waiting.wav');
+Insert into SONG (PLAYLIST_ID,SONG_NAME,SONG_DURATION,ALBUM_NAME,SONGLINK) values (1,'Chasing Pavements','00:02:48','greatest hits','media.io_Adele - Chasing Pavements .Flv.wav');
+Insert into SONG (PLAYLIST_ID,SONG_NAME,SONG_DURATION,ALBUM_NAME,SONGLINK) values (1,'Set Fire To The Rain','00:02:45','greatest hits','media.io_Adele - Set Fire To The Rain .wav');
+Insert into SONG (PLAYLIST_ID,SONG_NAME,SONG_DURATION,ALBUM_NAME,SONGLINK) values (1,'Hometown Glory','00:02:59','greatest hits','media.io_Adele - Hometown Glory. (19) .wav');
+Insert into SONG (PLAYLIST_ID,SONG_NAME,SONG_DURATION,ALBUM_NAME,SONGLINK) values (1,'Love Song','00:02:56','greatest hits','media.io_Adele-Love-Song.wav');
+Insert into SONG (PLAYLIST_ID,SONG_NAME,SONG_DURATION,ALBUM_NAME,SONGLINK) values (2,'Bird Set Free','00:02:35','This Is Acting','media.io_Sia - Bird Set Free.wav');
+Insert into SONG (PLAYLIST_ID,SONG_NAME,SONG_DURATION,ALBUM_NAME,SONGLINK) values (2,'One Million Bullets','00:02:36','This Is Acting','media.io_Sia - One Million Bullets.wav');
+Insert into SONG (PLAYLIST_ID,SONG_NAME,SONG_DURATION,ALBUM_NAME,SONGLINK) values (2,'Space Between','00:02:24','This Is Acting','media.io_Sia - Space Between (Audio).wav');
+Insert into SONG (PLAYLIST_ID,SONG_NAME,SONG_DURATION,ALBUM_NAME,SONGLINK) values (2,'Sweet Design','00:02:01','This Is Acting','media.io_Sia - Sweet Design.wav');
+Insert into SONG (PLAYLIST_ID,SONG_NAME,SONG_DURATION,ALBUM_NAME,SONGLINK) values (2,'Reaper','00:02:12','This Is Acting','media.io_Sia - Reaper (Audio).wav');
+Insert into SONG (PLAYLIST_ID,SONG_NAME,SONG_DURATION,ALBUM_NAME,SONGLINK) values (2,'House On Fire','00:02:36','This Is Acting','media.io_Sia - House On Fire (Audio).wav');
+Insert into SONG (PLAYLIST_ID,SONG_NAME,SONG_DURATION,ALBUM_NAME,SONGLINK) values (2,'Footprints','00:02:03','This Is Acting','media.io_Sia - Footprints (Audio).wav');
+Insert into SONG (PLAYLIST_ID,SONG_NAME,SONG_DURATION,ALBUM_NAME,SONGLINK) values (3,'i''m in here','00:02:03','We Are Born','media.io_Sia - I m In Here.wav');
+Insert into SONG (PLAYLIST_ID,SONG_NAME,SONG_DURATION,ALBUM_NAME,SONGLINK) values (4,'the Fight','00:02:56','We Are Born',null);
+Insert into SONG (PLAYLIST_ID,SONG_NAME,SONG_DURATION,ALBUM_NAME,SONGLINK) values (3,'you''ve Changed','00:02:36','We Are Born','media.io_Sia - You ve Changed (Video).wav');
+
+ CREATE TABLE KIND_PREFERENCED
+   (	
+   PREFERENCEDKINDOFSONGS VARCHAR2(50 BYTE) NOT NULL ENABLE, 
+	LISTENERUSERNAME VARCHAR2(50 BYTE) NOT NULL ENABLE, 
+	 CONSTRAINT KIND_PREFERENCED_PK PRIMARY KEY (PREFERENCEDKINDOFSONGS, LISTENERUSERNAME)
+   );
+
+set define off;
+Insert into KIND_PREFERENCED (PREFERENCEDKINDOFSONGS,LISTENERUSERNAME) values ('R&B','Muna');
+Insert into KIND_PREFERENCED (PREFERENCEDKINDOFSONGS,LISTENERUSERNAME) values ('R&B','haidy');
+Insert into KIND_PREFERENCED (PREFERENCEDKINDOFSONGS,LISTENERUSERNAME) values ('R&B pop','fared');
+Insert into KIND_PREFERENCED (PREFERENCEDKINDOFSONGS,LISTENERUSERNAME) values ('classic','mariem');
+Insert into KIND_PREFERENCED (PREFERENCEDKINDOFSONGS,LISTENERUSERNAME) values ('classic','yassmen');
+Insert into KIND_PREFERENCED (PREFERENCEDKINDOFSONGS,LISTENERUSERNAME) values ('classic','yousef');
+Insert into KIND_PREFERENCED (PREFERENCEDKINDOFSONGS,LISTENERUSERNAME) values ('classic pop hip hop','noha');
+Insert into KIND_PREFERENCED (PREFERENCEDKINDOFSONGS,LISTENERUSERNAME) values ('hip hop classic','menna');
+Insert into KIND_PREFERENCED (PREFERENCEDKINDOFSONGS,LISTENERUSERNAME) values ('hiphop ','miada');
+Insert into KIND_PREFERENCED (PREFERENCEDKINDOFSONGS,LISTENERUSERNAME) values ('jazz','Rawan');
+Insert into KIND_PREFERENCED (PREFERENCEDKINDOFSONGS,LISTENERUSERNAME) values ('jazz','mostafa');
+Insert into KIND_PREFERENCED (PREFERENCEDKINDOFSONGS,LISTENERUSERNAME) values ('pop','laila');
+Insert into KIND_PREFERENCED (PREFERENCEDKINDOFSONGS,LISTENERUSERNAME) values ('pop','mohamed');
+Insert into KIND_PREFERENCED (PREFERENCEDKINDOFSONGS,LISTENERUSERNAME) values ('pop ','mohga');
+Insert into KIND_PREFERENCED (PREFERENCEDKINDOFSONGS,LISTENERUSERNAME) values ('pop classic','Ahmad');
+Insert into KIND_PREFERENCED (PREFERENCEDKINDOFSONGS,LISTENERUSERNAME) values ('pop hip hop','maison');
+
+  CREATE TABLE MANAGE_
+   (
+   PLAYLIST_ID NUMBER(10,0) NOT NULL ,
+	L_USERNAME VARCHAR2(50 BYTE) NOT NULL ,
+	DURATION_ VARCHAR2(50 BYTE) NOT NULL ,
+	 CONSTRAINT MANAGE_PK PRIMARY KEY (PLAYLIST_ID, L_USERNAME),
+CONSTRAINT MANAGE__PLAYLIST_FK1 FOREIGN KEY (PLAYLIST_ID) REFERENCES PLAYLIST (PLAYLIST_ID) 
+   );
+
+set define off;
+Insert into MANAGE_ (PLAYLIST_ID,L_USERNAME,DURATION_) values (1,'mohga','01:00:00');
+Insert into MANAGE_ (PLAYLIST_ID,L_USERNAME,DURATION_) values (2,'sandy','01:15:32');
+Insert into MANAGE_ (PLAYLIST_ID,L_USERNAME,DURATION_) values (8,'sandra','02:15:56');
+Insert into MANAGE_ (PLAYLIST_ID,L_USERNAME,DURATION_) values (5,'miada','16:00:56');
+Insert into MANAGE_ (PLAYLIST_ID,L_USERNAME,DURATION_) values (3,'mostafa','20:20:36');
+Insert into MANAGE_ (PLAYLIST_ID,L_USERNAME,DURATION_) values (10,'menna','15:58:59');
+Insert into MANAGE_ (PLAYLIST_ID,L_USERNAME,DURATION_) values (4,'Rawan','15:59:15');
+Insert into MANAGE_ (PLAYLIST_ID,L_USERNAME,DURATION_) values (12,'miada','00:20:16');
+Insert into MANAGE_ (PLAYLIST_ID,L_USERNAME,DURATION_) values (9,'haidy','21:00:00');
+Insert into MANAGE_ (PLAYLIST_ID,L_USERNAME,DURATION_) values (6,'yassmen','14:00:00');
+Insert into MANAGE_ (PLAYLIST_ID,L_USERNAME,DURATION_) values (7,'maison','00:30:00');
+Insert into MANAGE_ (PLAYLIST_ID,L_USERNAME,DURATION_) values (11,'mohamed','00:15:23');
+
+
+
+  CREATE TABLE PLAYLISTANDSONG
+   (
+   PLAYLIST_ID NUMBER(10,0) NOT NULL , 
+	SONG_NAME VARCHAR2(50 BYTE) NOT NULL , 
+	 CONSTRAINT PLAYLISTANDSONG_PK PRIMARY KEY (SONG_NAME, PLAYLIST_ID),
+CONSTRAINT PLAYLISTANDSONG_PLAYLIST_FK1 FOREIGN KEY (PLAYLIST_ID) REFERENCES PLAYLIST (PLAYLIST_ID)
+);
+
+set define off;
+Insert into PLAYLISTANDSONG (PLAYLIST_ID,SONG_NAME) values (1,'Bird Set Free');
+Insert into PLAYLISTANDSONG (PLAYLIST_ID,SONG_NAME) values (1,'Chasing Pavements');
+Insert into PLAYLISTANDSONG (PLAYLIST_ID,SONG_NAME) values (2,'Footprints');
+Insert into PLAYLISTANDSONG (PLAYLIST_ID,SONG_NAME) values (1,'Hometown Glory');
+Insert into PLAYLISTANDSONG (PLAYLIST_ID,SONG_NAME) values (2,'House On Fire');
+Insert into PLAYLISTANDSONG (PLAYLIST_ID,SONG_NAME) values (1,'I''ll Be Waiting');
+Insert into PLAYLISTANDSONG (PLAYLIST_ID,SONG_NAME) values (1,'Love Song');
+Insert into PLAYLISTANDSONG (PLAYLIST_ID,SONG_NAME) values (1,'Make You Feel My Love');
+Insert into PLAYLISTANDSONG (PLAYLIST_ID,SONG_NAME) values (2,'One Million Bullets');
+Insert into PLAYLISTANDSONG (PLAYLIST_ID,SONG_NAME) values (2,'Reaper');
+Insert into PLAYLISTANDSONG (PLAYLIST_ID,SONG_NAME) values (1,'Rolling In The Deep');
+Insert into PLAYLISTANDSONG (PLAYLIST_ID,SONG_NAME) values (1,'Set Fire To The Rain');
+Insert into PLAYLISTANDSONG (PLAYLIST_ID,SONG_NAME) values (1,'Someone Like You');
+Insert into PLAYLISTANDSONG (PLAYLIST_ID,SONG_NAME) values (2,'Space Between');
+Insert into PLAYLISTANDSONG (PLAYLIST_ID,SONG_NAME) values (2,'Sweet Design');
+Insert into PLAYLISTANDSONG (PLAYLIST_ID,SONG_NAME) values (3,'i''m in here');
+Insert into PLAYLISTANDSONG (PLAYLIST_ID,SONG_NAME) values (4,'the Fight');
+Insert into PLAYLISTANDSONG (PLAYLIST_ID,SONG_NAME) values (3,'you''ve Changed');
+
+
+ CREATE TABLE USER_SONGS 
+   (	USER_NAME VARCHAR2(50 BYTE) NOT NULL , 
+	SONG_NAME VARCHAR2(50 BYTE) NOT NULL , 
+	 CONSTRAINT PK_USER_SONGS PRIMARY KEY (SONG_NAME, USER_NAME),
+	 FOREIGN KEY (USER_NAME)  REFERENCES  LISTENER (USER_NAME) , 
+	 FOREIGN KEY (SONG_NAME)  REFERENCES SONG (SONG_NAME) 
+
+);
+set define off;
+
+Insert into USER_SONGS (USER_NAME,SONG_NAME) values ('hidy khaled','Bird Set Free');
+Insert into USER_SONGS (USER_NAME,SONG_NAME) values ('menna','Bird Set Free');
+Insert into USER_SONGS (USER_NAME,SONG_NAME) values ('mostafa','Bird Set Free');
+Insert into USER_SONGS (USER_NAME,SONG_NAME) values ('sandy','Bird Set Free');
+Insert into USER_SONGS (USER_NAME,SONG_NAME) values ('Muna','Chasing Pavements');
+Insert into USER_SONGS (USER_NAME,SONG_NAME) values ('sandy','Chasing Pavements');
+Insert into USER_SONGS (USER_NAME,SONG_NAME) values ('fared','Footprints');
+Insert into USER_SONGS (USER_NAME,SONG_NAME) values ('marwa mohamed123','Footprints');
+Insert into USER_SONGS (USER_NAME,SONG_NAME) values ('mohgaA','Footprints');
+Insert into USER_SONGS (USER_NAME,SONG_NAME) values ('sandy','Footprints');
+Insert into USER_SONGS (USER_NAME,SONG_NAME) values ('Ahmad','Hometown Glory');
+Insert into USER_SONGS (USER_NAME,SONG_NAME) values ('maison','House On Fire');
+Insert into USER_SONGS (USER_NAME,SONG_NAME) values ('marwa mohamed123','House On Fire');
+Insert into USER_SONGS (USER_NAME,SONG_NAME) values ('noha','I''ll Be Waiting');
+Insert into USER_SONGS (USER_NAME,SONG_NAME) values ('Ahmad','Love Song');
+Insert into USER_SONGS (USER_NAME,SONG_NAME) values ('gogo','Love Song');
